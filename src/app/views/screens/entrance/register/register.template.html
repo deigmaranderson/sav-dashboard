@@ -1,0 +1,144 @@
+<div class="middle-box text-center loginscreen   animated fadeInDown">
+    <div class="ibox-content">
+        <div>
+            <h3>Cadastrar BRSAV</h3>
+            <p>Preencha os campos abaixo para ter acesso</p>
+            <form class="m-t" role="form" action="login.html">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Primeiro Nome" required="">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Sobrenome" required="">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" required="" autocomplete="new-password">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Telefone" required="" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <small>Tipo de estabelecimento</small>
+                    <select class="select2_demo_1 form-control">
+                        <option value="market">Mercado</option>
+                        <option value="grocery">Mercearia</option>
+                        <option value="bakery">Padaria</option>
+                        <option value="wholesale">Atacado</option>
+                        <option value="home">Casa</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nome do estabelecimento" required="" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <small>Ao cadastrar você estará concordando com todos os <a data-toggle="modal"
+                            data-target="#modal-terms">Termos
+                            de Uso</a> e <a data-toggle="modal" data-target="#modal-policy">Políticas
+                            de Privacidade</a> </small>
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b">Cadastrar</button>
+
+                <p class="text-muted text-center"><small>Você já possui uma conta?</small></p>
+                <a class="btn btn-sm btn-white btn-block" [routerLink]="['/login']">Entrar</a>
+            </form>
+        </div>
+
+        <div class="modal inmodal" id="modal-terms" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content animated bounceInRight">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Termos de uso</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>É preciso que você siga as políticas disponibilizadas a você dentro dos Serviços.</p>
+
+                        <p>Não faça uso indevido de nossos Serviços. Por exemplo, não interfira com nossos Serviços nem
+                            tente acessá-los por um método diferente da interface e das instruções que fornecemos. Você
+                            pode usar nossos serviços somente conforme permitido por lei, inclusive leis e regulamentos
+                            de controle de exportação e reexportação. Podemos suspender ou deixar de fornecer nossos
+                            Serviços se você descumprir nossos termos ou políticas ou se estivermos investigando casos
+                            de suspeita de má conduta;</p>
+
+                        <p>O uso de nossos Serviços não lhe confere a propriedade sobre direitos de propriedade
+                            intelectual sobre os nossos Serviços ou sobre o conteúdo que você acessar. Você não pode
+                            usar conteúdos de nossos Serviços a menos que obtenha permissão do proprietário de tais
+                            conteúdos ou que o faça por algum meio permitido por lei. Estes termos não conferem a você o
+                            direito de usar quaisquer marcas ou logotipos utilizados em nossos Serviços. Não remova,
+                            oculte ou altere quaisquer avisos legais exibidos em ou junto a nossos Serviços.</p>
+
+                        <p>Nossos Serviços exibem alguns conteúdos que não são do Google. Esses conteúdos são de
+                            exclusiva responsabilidade da entidade que os disponibiliza. Podemos revisar conteúdo para
+                            determinar se é ilegal ou se infringe nossas políticas, e podemos remover ou nos recusar a
+                            exibir conteúdos que razoavelmente acreditamos violar nossas políticas ou a lei. Mas isso
+                            não significa, necessariamente, que revisaremos conteúdos, portanto por favor, não presuma
+                            que o faremos.</p>
+
+                        <p>Em relação com seu uso dos Serviços, podemos enviar-lhe anúncios de serviços, mensagens
+                            administrativas e outras informações. Você pode desativar algumas dessas comunicações.</p>
+
+                        <p>Alguns dos nossos Serviços estão disponíveis em dispositivos móveis. O usuário não deve
+                            utilizar tais Serviços de forma que o distraia ou o impeça de cumprir leis de trânsito ou de
+                            segurança.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal inmodal" id="modal-policy" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content animated bounceInRight">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Políticas de Privacidade</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>É preciso que você siga as políticas disponibilizadas a você dentro dos Serviços.</p>
+
+                        <p>Não faça uso indevido de nossos Serviços. Por exemplo, não interfira com nossos Serviços nem
+                            tente acessá-los por um método diferente da interface e das instruções que fornecemos. Você
+                            pode usar nossos serviços somente conforme permitido por lei, inclusive leis e regulamentos
+                            de controle de exportação e reexportação. Podemos suspender ou deixar de fornecer nossos
+                            Serviços se você descumprir nossos termos ou políticas ou se estivermos investigando casos
+                            de suspeita de má conduta;</p>
+
+                        <p>O uso de nossos Serviços não lhe confere a propriedade sobre direitos de propriedade
+                            intelectual sobre os nossos Serviços ou sobre o conteúdo que você acessar. Você não pode
+                            usar conteúdos de nossos Serviços a menos que obtenha permissão do proprietário de tais
+                            conteúdos ou que o faça por algum meio permitido por lei. Estes termos não conferem a você o
+                            direito de usar quaisquer marcas ou logotipos utilizados em nossos Serviços. Não remova,
+                            oculte ou altere quaisquer avisos legais exibidos em ou junto a nossos Serviços.</p>
+
+                        <p>Nossos Serviços exibem alguns conteúdos que não são do Google. Esses conteúdos são de
+                            exclusiva responsabilidade da entidade que os disponibiliza. Podemos revisar conteúdo para
+                            determinar se é ilegal ou se infringe nossas políticas, e podemos remover ou nos recusar a
+                            exibir conteúdos que razoavelmente acreditamos violar nossas políticas ou a lei. Mas isso
+                            não significa, necessariamente, que revisaremos conteúdos, portanto por favor, não presuma
+                            que o faremos.</p>
+
+                        <p>Em relação com seu uso dos Serviços, podemos enviar-lhe anúncios de serviços, mensagens
+                            administrativas e outras informações. Você pode desativar algumas dessas comunicações.</p>
+
+                        <p>Alguns dos nossos Serviços estão disponíveis em dispositivos móveis. O usuário não deve
+                            utilizar tais Serviços de forma que o distraia ou o impeça de cumprir leis de trânsito ou de
+                            segurança.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            Copyright BRSAV
+        </div>
+        <div class="col-md-6 text-right">
+            <small>© 2019-2020</small>
+        </div>
+    </div>
+</div>

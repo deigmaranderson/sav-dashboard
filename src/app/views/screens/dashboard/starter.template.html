@@ -1,0 +1,117 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-title">
+          <h5>Projeção</h5>
+        </div>
+        <div class="ibox-content">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="flot-chart">
+                <div flotChart class="flot-chart-content" [options]="flotOptions" [dataset]="flotDataset"></div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <ul class="stat-list">
+                <li>
+                  <h2 class="no-margins">2.346</h2>
+                  <small>Total de produtos à vencer</small>
+                  <div class="stat-percent">25%</div>
+                  <div class="progress progress-mini">
+                    <div style="width: 25%;" class="progress-bar"></div>
+                  </div>
+                </li>
+                <li>
+                  <h2 class="no-margins ">9.180</h2>
+                  <small>Produtos em estoque</small>
+                  <div class="stat-percent">100%</div>
+                  <div class="progress progress-mini">
+                    <div style="width: 100%;" class="progress-bar"></div>
+                  </div>
+                </li>
+                <li>
+                  <h2 class="no-margins ">6.834</h2>
+                  <small>Margem de projeção</small>
+                  <div class="stat-percent">75%</div>
+                  <div class="progress progress-mini">
+                    <div style="width: 75%;" class="progress-bar"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-lg-4">
+        <widget-info-total name="Vencendo" label="Hoje" label_color="high" total="51"
+          total_description="Produtos prestes a vencer"></widget-info-total>
+      </div>
+      <div class="col-lg-4">
+        <widget-info-total name="Vencendo" label="3 dias" label_color="medium" total="65"
+          total_description="Produtos prestes a vencer"></widget-info-total>
+      </div>
+      <div class="col-lg-4">
+        <widget-info-total name="Vencendo" label="5 dias" label_color="normal" total="71"
+          total_description="Produtos prestes a vencer"></widget-info-total>
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-content">
+          <div class="m-t-sm">
+            <div class="row">
+              <div class="col-md-8">
+                <div>
+                  <canvas baseChart height="114" [datasets]="lineChartData" [labels]="lineChartLabels"
+                    [options]="lineChartOptions" [chartType]="lineChartType" [colors]="lineChartColors">
+                  </canvas>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <ul class="stat-list m-t-lg">
+                  <li>
+                    <h2 class="no-margins">R$ 2.346,00</h2>
+                    <small>Total de produtos à vencer (R$)</small>
+                    <div class="progress progress-mini">
+                      <div class="progress-bar" style="width: 19%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h2 class="no-margins ">R$ 12.024,00</h2>
+                    <small>Total de produtos em estoque (R$)</small>
+                    <div class="progress progress-mini">
+                      <div class="progress-bar" style="width: 100%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h2 class="no-margins ">R$ 9.628,00</h2>
+                    <small>Margem de projeção</small>
+                    <div class="progress progress-mini">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="m-t-md">
+            <small>
+              <strong>Projeção</strong> estima-se o valor considerado em estoque e o valor total de produtos à vencer
+            </small>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

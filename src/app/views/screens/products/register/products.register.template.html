@@ -1,0 +1,93 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Produtos</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a [routerLink]="['/painel']">Painel</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a [routerLink]="['/products']">Produtos</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Registrar</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight ecommerce">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox ">
+                <div class="ibox-content">
+                    <form method="get">
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Referência</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Ref.">
+                                <span class="form-text m-b-none">
+                                    Informe um código de referência do produto para
+                                    localização (Ex.: EAN, ISBN, QRCode, ...)
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group row"><label class="col-sm-2 col-form-label">Descrição</label>
+
+                            <div class="col-sm-10"><input type="text" placeholder="Descrição" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group row"><label class="col-sm-2 col-form-label">Valor de Venda</label>
+
+                            <div class="col-sm-10"><input type="text" placeholder="Valor de Venda" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group row"><label class="col-sm-2 col-form-label">Quantidade</label>
+                            <div class="col-sm-10"><input type="text" placeholder="Quantidade" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group row"><label class="col-sm-2 col-form-label">Vencimento</label>
+                            <div class="col-sm-10"><input type="text" placeholder="Vencimento" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="form-group row"><label class="col-sm-2 col-form-label">Tags</label>
+                            <div class="col-sm-10">
+                                <input class="tagsinput form-control" type="text"  placeholder="Tags"
+                                    value="Amsterdam, Washington, Sydney, Beijing, Cairo" />
+                                <span class="form-text m-b-none">
+                                    Tags são identificadores para filtros e relatórios. (Ex.: Latícinio, Setor X)
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group row">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <a [routerLink]="['/products']" class="btn btn-white btn-sm">Cancelar</a>
+                                &nbsp;
+                                <button class="btn btn-primary btn-sm" type="submit">Salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

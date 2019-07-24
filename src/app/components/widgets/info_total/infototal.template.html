@@ -1,0 +1,22 @@
+<div class="ibox float-e-margins">
+    <div class="ibox-title">
+        <span class="label pull-right" *ngIf="label!=null" [ngClass]="
+        {
+           'label-success' : label_color=='normal',
+           'label-warning' : label_color=='medium',
+           'label-danger' : label_color=='high'
+        }">{{label}}</span>
+        <h5>{{name}}</h5>
+    </div>
+    <div class="ibox-content">
+        <h2 class="no-margins"  *ngIf="label!=null" [ngClass]="
+        {
+           'text-success' : label_color=='normal',
+           'text-warning' : label_color=='medium',
+           'text-danger' : label_color=='high'
+        }">
+            <i class="fa fa-play fa-rotate-90"></i> {{total}}
+        </h2>
+        <small>{{total_description}}</small>
+    </div>
+</div>

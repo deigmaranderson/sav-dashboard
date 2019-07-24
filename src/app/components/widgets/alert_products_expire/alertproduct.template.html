@@ -1,0 +1,26 @@
+<div class="ibox">
+    <div class="ibox-content">
+        <h3>{{title}}</h3>
+        <p class="small"><i class="fa fa-exclamation-triangle"></i>&nbsp;{{subtitle}}</p>
+
+        <ul class="sortable-list connectList agile-list" id="todo" *ngFor="let item of items">
+            <li  [ngClass]="
+            {
+               'info-element' : item.type=='normal',
+               'warning-element' : item.type=='medium',
+               'danger-element' : item.type=='high'             
+            }">
+                <b>{{item.name}}</b>
+                <div class="agile-detail">
+                    <i class="fa fa-calendar"></i> (vencimento)
+                </div>
+                <div class="agile-detail">
+                    <i class="fa fa-cubes"></i> {{item.total}} itens
+                </div>
+                <div class="agile-detail">
+                    <a href="#" class="float-right btn btn-xs btn-white">Ref.: {{item.ref}}</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

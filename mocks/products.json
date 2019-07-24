@@ -1,0 +1,1 @@
+[{     "ref": "9871541212",     "description": "Arroz",     "costValue": "10.00",     "saleValue": "20.00",     "quantity": "124.0",     "expireDate": "2019-07-20",     "tags": ["alimento"], }, {     "ref": "321354",     "description": "Feijão",     "costValue": "15.00",     "saleValue": "20.00",     "quantity": "24.0",     "expireDate": "2019-08-11",     "tags": ["alimento"], }]

@@ -1,0 +1,149 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Produtos</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Painel</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="index.html">Configurações</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <strong>Notificações</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight ecommerce">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox collapsed">
+                <div class="ibox-title">
+                    <h5>Como funciona?</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <p>Para que o sistema crie uma notificação de alerta, é necessário vincular uma tag cadastrada a
+                        um prazo de dias em específico.</p>
+                    <p>O sistema vai notificar com antecendencia o vencimento do produto de acordo com o total de
+                        dia escolhido.</p>
+                    <p>O alerta inclui recorrência diária. Ou seja, sempre vai notificar dia-a-dia até que o produto
+                        entre em vencimento.</p>
+                    <p>Ex.: Se a tag for configurada no prazo de aviso de 7 dias. A notificação vai ser emitida 7 dias
+                        antes do vencimento, até que o produta vença.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <h3>Tags cadastradas</h3>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nova tag" class="input form-control-sm form-control">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-sm btn-white"> <i class="fa fa-plus"></i> Tag</button>
+                        </span>
+                    </div>
+
+                    <ul class="sortable-list connectList agile-list" id="todo">
+                        <li *ngFor="let item of [0,1,2,3,4,5,6,7,8,9,10]">
+                            &nbsp;<span class="badge" id="task1">Plain</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <h3>7 dias</h3>
+                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
+
+                    <ul class="sortable-list connectList agile-list" id="todo">
+                        <li *ngFor="let item of [0]">
+                            &nbsp;<span class="badge" id="task1">Plain</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <h3>5 dias</h3>
+                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
+
+                    <ul class="sortable-list connectList agile-list" id="todo">
+                        <li *ngFor="let item of [0]">
+                            &nbsp;<span class="badge" id="task1">Plain</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <h3>3 dias</h3>
+                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
+
+                    <ul class="sortable-list connectList agile-list" id="todo">
+                        <li *ngFor="let item of [0]">
+                            &nbsp;<span class="badge" id="task1">Plain</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <h3>1 dia</h3>
+                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
+
+                    <ul class="sortable-list connectList agile-list" id="todo">
+                        <li *ngFor="let item of [0]">
+                            &nbsp;<span class="badge" id="task1">Plain</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+
+            <h4>
+                Serialised Output
+            </h4>
+            <p>
+                Serializes the sortable's item id's into an array of string.
+            </p>
+
+            <div class="output p-m m white-bg"></div>
+
+
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+
+
+</script>
